@@ -83,6 +83,12 @@ input:focus{
     background-color: #FFED00;
     color: rgb(0, 0, 0);
     font-size: 15px;
+    border: none;
+    font-weight: 700;
+}
+.inputel{
+    display: flex;
+    gap: 10px;
 }
 .current-status{
   width:100%;
