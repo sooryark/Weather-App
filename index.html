@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="/css/images/cloudy.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!--container-->
+    <div class="container">
+        <!--searchbox and location start-->
+        <div class="nav-header">
+            <div class="inputel">
+                <input type="search" id="searchEl" name="search" placeholder="Enter your City"><button id="searchbtn">Search</button>
+            </div>
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i><p id="location-name"> cheenai</p>
+            </div>
+        </div>
+        <!--search box and location end-->
+        <div class="current-status">
+        <!--current weather status start-->
+            <div class="current-data">
+                <img src="css/images/dusk.png" id="banner">
+                <div class="temp-data">
+                    <h4 id="current-temp">30.3</h4> 
+                    <span id="temp-unit"></span>
+                </div>
+                <div class="date-time">
+                    <p id="date">Tuesday</p><span id="time">6:12AM</span>
+                </div>
+                <div class="cloud-condition">
+                    <i class="fas fa-cloud"></i> <p id="cloud-status">Partially cloudy</p>
+                </div>
+                <div class="rain-condition">
+                    <i class="fas fa-tint"></i><p id="rain-status">5%</p>  
+                </div>
+                <div class="unit">
+                    <button id="celsius">°C</button>
+                    <button id="fahrenheit">°F</button>
+                 </div>
+            </div>
+            <!--current weather status end-->
+
+
+            <!-- currentconditins start-->
+            <div class="cards">
+                <div class="card card1">
+                    <p class="header">UV Index</p>
+                    <p id="uvindex">0</p>
+                    <p id="uv-text">low</p>
+                </div>
+                <div class="card card2">
+                    <p class="header">Humidity</p>
+                    <p id="humidity">0</p>
+                    <p id="humidity-text">low</p>
+                </div>
+                <div class="card card3">
+                    <p class="header">sunrise&sunset</p>
+                    <div id="sunrise"></div>
+                    <div id="sunset"></div>
+                </div>
+                <div class="card card4">
+                    <p class="header">Wind Speed</p>
+                    <p id="wind">0</p>
+                    <p id="wind-status">low</p>
+                </div>
+                <div class="card card5">
+                    <p class="header">Visibility</p>
+                    <p id="Visibility">0</p>
+                    <p id="Visibility-status">low</p>
+                </div>
+                <div class="card card5">
+                    <p class="header">Cloud-cover</p>
+                    <p id="cloudcover">0</p>
+                    <p id="cloudcover-status">low</p>
+                </div>
+            </div>
+            <div class="card card6">
+                <div id="airquality">
+                    <span id="north">N</span>
+                        <span id="east">E</span>
+                        <span id="west">W</span>
+                        <span id="south">S</span>
+                    <div id="arrow">
+                    </div>
+                    <div id="round"></div>
+            </div>
+            <p class="header">Wind Direction</p>
+                <p id="airquality-status">low</p>
+            </div>
+            <!--current conditions End-->
+        </div>
+        <div class="weather-data">
+            <!--Weather data start-->
+            <div class="btn-items">
+                <button id="todaybtn">Today</button>
+                <button id="weekbtn">Week</button>
+            </div>
+            <div class="weather-box" id="weathercard">
+               
+            </div>
+            <!--weather data end-->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height:100vh;
+    background-color:rgba(14, 13, 13, 0.964);
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    background: #222128;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    width:100%;
+    height:100vh;
+    padding: 10px;
+}
+.nav-header{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.current-data .temp-data{
+    display: flex;
+    justify-content: center;
+    color:#FFED00;
+    font-weight: bold;
+    font-size: 25px;
+}
+.date-time{
+    display: flex;
+    justify-content: center;
+    gap:5px;
+}
+.location{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    color:#FFED00;
+    font-weight: bold;
+}
+.unit button{
+   padding: 5px;
+   font-size: 15px;
+   border-radius: 50%;
+   margin: 0px 5px;
+   width:30px;
+   height:30px;
+   cursor: pointer;
+   margin-top: 10px;
+   border: none;
+   font-weight: bold;
+}
+.unit button:hover{
+    background-color: #FFED00;
+}
+.active{
+background-color: #FFED00;
+}
+input{
+    padding:10px;
+    width:200px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+input:focus{
+    border: 3px solid #FFED00;
+}
+#searchbtn{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FFED00;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.current-status{
+  width:100%;
+  height:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+}
+.current-data{
+    width:250px;
+    height: 260px;
+    text-align: center;
+    border-radius: 30px;
+    background-color:rgb(0, 0, 0);
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+.current-data:hover{
+    transform: scale(0.9);
+}
+
+.container #banner{
+    width: 80px;
+    height:80px;
+    border: 1px solid #FFED00;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.header{
+    color:#FFED00;
+    font-weight: bold;
+}
+
+.cards{
+    width:500px;
+    height:300px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-content: center;
+    cursor: pointer;
+}
+
+.card{
+    width:150px;
+    height:100px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    font-size: 14px;
+    word-wrap: break-word;
+    transition: 0.3s ease-in-out;
+}
+.card:hover{
+   transform: scale(0.9);
+}
+#sunrise{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+#sunset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+.card3 img{
+    width:20px;
+    height:20px;
+}
+.card6{
+    width:200px;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    
+}
+#airquality{
+    width:80px;
+    height:80px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+}
+.card6 #arrow{
+    background-color: red;
+    width: 7px;
+    height:25px;
+    position: absolute;
+    transform-origin: bottom center;
+    bottom: 50%;
+    left: 45%;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    z-index: 3
+}
+#round{
+    width:15px;
+    height:15px;
+    background-color: black;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 99;
+}
+#north{
+    color:blue;
+    font-size: 10px;
+    position: absolute;
+    top:0;
+    left:45%;
+    font-weight: bold;
+}
+#east{
+    color:blue;
+    font-size: 10px;
+    position: absolute;
+    top:40%;
+    right:3px;
+    font-weight: bold;
+}
+#south{
+    color:blue;
+    font-size: 10px;
+    position: absolute;
+    bottom:0;
+    left:45%;
+    font-weight: bold;
+}
+#west{
+    color:blue;
+    font-size: 10px;
+    position: absolute;
+    top:40%;
+    left:3px;
+    font-weight: bold;
+}
+
+.cloud-condition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.rain-condition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap:20px;
+}
+
+
+.weather-data{
+    width:100%;
+    height:auto;
+}
+.btn-items{
+    margin-left: 10%;
+}
+.btn-items button{
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    margin: 0px 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-items button:hover{
+    background-color: #FFED00;
+}
+.weather-box{
+    width:100%;
+    height:350px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+#weathercard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+.weather-cards{
+    width:150px;
+    height:100px;
+    background-color: rgb(5, 5, 5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2px;
+    border: 2px solid #FFED00;
+    margin: 0px 1px;
+}
+.cardtemp{
+    display: flex;
+    justify-content: center;
+    color: #FFED00;
+}
+#cardimg{
+    width:30px;
+    height:30px;
+    object-fit: contain;
+}
+
+/*Media query*/
+
+@media(max-width:800px){
+    .container{
+        padding:0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+    }
+    .current-status{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,160px);
+        margin: 20px;
+    }
+    .card{
+        width:150px;
+        height:100px;
+        font-size: 14px;
+    
+    }
+    .card6{
+        width:200px;
+        height:200px
+    }
+    .weather-data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+}
